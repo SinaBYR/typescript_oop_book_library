@@ -1,0 +1,14 @@
+{
+  "name": "typescript_oop_book_library",
+  "version": "0.1.0",
+  "description": "a typescript book library project with OOP paradigm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sina Beyraghdar",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
