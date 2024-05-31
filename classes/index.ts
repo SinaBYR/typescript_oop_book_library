@@ -1,3 +1,2 @@
-export { Person } from "./person"
-export { Author } from "./author"
-export { Book } from "./book"
+export { Person, Author } from "./people"
+export { Book } from "./library"
