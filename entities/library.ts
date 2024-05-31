@@ -21,6 +21,10 @@ export class Book {
 		return this._title
 	}
 
+	get isbn() {
+		return this._isbn
+	}
+
 	get edition() {
 		return this._edition
 	}
@@ -59,8 +63,21 @@ export class Shelf {
 		this._books.push(book)
 	}
 
+	// it removes the specified book by isbn
+	removeBook(book: Book) {
+		const newBooks = this._books.filter(b => b.isbn !== book.isbn)
+		this._books = newBooks
+		return newBooks
+	}
+
 	removeBookByTitle(title: string) {
 		const newBooks = this._books.filter(b => b.title !== title)
+		this._books = newBooks
+		return newBooks
+	}
+
+	removeBookByIsbn(isbn: string) {
+		const newBooks = this._books.filter(b => b.isbn !== isbn)
 		this._books = newBooks
 		return newBooks
 	}
@@ -73,3 +90,4 @@ export class Shelf {
 		return this._books.find(b => b._isbn === isbn)
 	}
 }
+

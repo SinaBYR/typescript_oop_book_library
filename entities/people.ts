@@ -59,3 +59,5 @@ export class Author extends Person {
 	}
 }
 
+export class Member extends Person {}
+
