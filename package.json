@@ -9,6 +9,7 @@
   "author": "Sina Beyraghdar",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.12.13",
     "typescript": "^5.4.5"
   }
 }
